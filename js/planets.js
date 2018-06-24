@@ -38,12 +38,10 @@ function generateList(parent, list) {
 
 function getPlanetDetails(e) {
     if (e.target && e.target.nodeName == "LI") {
-        // console.log(e.target.attributes.url.nodeValue + " was clicked");
         if (e.target.attributes.url) {
             document.getElementById('homeLoader').style.display = 'block'
             API.getResource(e.target.attributes.url.nodeValue)
                 .then(function(res) {
-                    console.log(res)
                     document.getElementById('homeLoader').style.display = 'none'
                     setModalContent(res)
                 })
