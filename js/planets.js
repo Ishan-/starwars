@@ -74,3 +74,8 @@ window.onclick = function(event) {
         document.getElementById('myModal').style.display = "none";
     }
 }
+
+function logOut() {
+    hasAccess = false
+    window.location.hash = '#login'
+}

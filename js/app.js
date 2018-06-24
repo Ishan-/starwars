@@ -12,4 +12,10 @@
 
 var baseUrl = 'https://swapi.co/api/',
     loginUrl = baseUrl + 'people/',
-    planetListUrl = baseUrl + 'planets/'
+    planetListUrl = baseUrl + 'planets/',
+    hasAccess = false;
+
+if (!hasAccess) {
+    //page loads set to login page
+    window.location.hash = '#login'
+}

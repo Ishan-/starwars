@@ -3,6 +3,18 @@
         margin: 50px auto;
     }
     
+    .login-error {
+        color: #d50000;
+    }
+    
+    .header {
+        z-index: 32;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        color: rgba(255, 255, 255, 0.75);
+        background-color: #24292e;
+    }
+    
     .list-group-item:active {
         z-index: 2;
         color: #fff;
@@ -33,15 +45,21 @@
     }
     
     .search-box {
-        top: 5%;
+        top: 10%;
         position: absolute;
         width: 100%;
     }
     
     .planet-list {
-        top: 10%;
+        top: 15%;
         position: absolute;
         width: 100%;
+    }
+    
+    .btn-right {
+        position: absolute;
+        top: 11px;
+        right: 10px;
     }
     /* modal */
     

@@ -1,14 +1,14 @@
 {
     "name": "starwars",
     "version": "1.0.0",
-    "description": "A vanilajs SPA",
+    "description": "A vanillajs SPA",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
         "starwars",
-        "vanilajs",
+        "vanillajs",
         "spa"
     ],
     "author": "ishan",
