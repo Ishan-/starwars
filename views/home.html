@@ -1,0 +1,40 @@
+<div class="loader" id="homeLoader" style="display: none"></div>
+<div class="search-box">
+    <div class="col-lg-3">
+    </div>
+    <div class="col-lg-6">
+        <input type="search" class="form-control" id="myInput" onkeyup="searchPlanets()" placeholder="I can help you to find data about starwar's planet">
+    </div>
+</div>
+
+<div class="planet-list">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <ul id="results" class="list-group" onclick="getPlanetDetails(event)"></ul>
+    </div>
+</div>
+
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="planet-name"></h2>
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-2 label">Climate</div>
+                <div class="col-md-4" id="climate"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 label">Diameter</div>
+                <div class="col-md-4" id="diameter"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 label">Terrain</div>
+                <div class="col-md-4" id="terrain"></div>
+            </div>
+        </div>
+    </div>
+
+</div>

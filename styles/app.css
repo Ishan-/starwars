@@ -1,0 +1,160 @@
+    .login-form {
+        width: 340px;
+        margin: 50px auto;
+    }
+    
+    .list-group-item:active {
+        z-index: 2;
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    
+    .no-data {
+        font-size: 30px;
+        color: red;
+    }
+    
+    .home-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .search-content {
+        position: absolute;
+        margin: 0 auto;
+        top: 5%;
+        left: 35%;
+    }
+    
+    .label {
+        font-weight: bold;
+    }
+    
+    .search-box {
+        top: 5%;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .planet-list {
+        top: 10%;
+        position: absolute;
+        width: 100%;
+    }
+    /* modal */
+    
+    .modal {
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: fadeIn;
+        animation-duration: 0.4s
+    }
+    
+    .modal-content {
+        top: 15%;
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: slideIn;
+        animation-duration: 0.4s
+    }
+    /* The Close Button */
+    
+    .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .modal-header {
+        padding: 2px 16px;
+        background-color: lightblue;
+        color: white;
+    }
+    
+    .modal-body {
+        padding: 2px 16px;
+    }
+    
+    .modal-footer {
+        padding: 2px 16px;
+        background-color: lightblue;
+        color: white;
+    }
+    /* Add Animation */
+    
+    @-webkit-keyframes slideIn {
+        from {
+            bottom: -300px;
+            opacity: 0
+        }
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+    
+    @keyframes slideIn {
+        from {
+            bottom: -300px;
+            opacity: 0
+        }
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+    
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0
+        }
+        to {
+            opacity: 1
+        }
+    }
+    /* loader css */
+    
+    .loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
